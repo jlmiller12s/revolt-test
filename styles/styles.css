@@ -122,7 +122,6 @@ main pre {
 
 /* links */
 a:any-link {
-  color: var(--link-color);
   text-decoration: none;
 }
 

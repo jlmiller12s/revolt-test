@@ -1,7 +1,19 @@
 footer {
   padding: 2rem;
-  background-color: var(--light-color);
+  background-color: var(--background-color);
   font-size: var(--body-font-size-s);
+  display: flex;
+  flex-direction: row;
+}
+
+.footer .default-content-wrapper {
+  display: flex;
+}
+ul:before{
+  content:attr(aria-label);
+  font-size:120%;
+  font-weight:bold;
+  margin-left:-15px;
 }
 
 footer .footer {
@@ -11,4 +23,12 @@ footer .footer {
 
 footer .footer p {
   margin: 0;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li a {
+  color: #fff;
 }
