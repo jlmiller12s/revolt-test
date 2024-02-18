@@ -14,14 +14,14 @@
   /* colors */
   --link-color: #035fe6;
   --link-hover-color: #136ff6;
-  --background-color: white;
-  --light-color: #eee;
+  --background-color: rgb(0, 0, 0);
+  --light-color: #bdbdbd;
   --dark-color: #ccc;
-  --text-color: black;
+  --text-color: rgb(255, 255, 255);
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback;
-  --heading-font-family: var(--body-font-family);
+  --body-font-family: quest;
+  --heading-font-family: noto;
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
   /* body sizes */
