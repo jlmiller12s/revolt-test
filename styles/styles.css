@@ -14,10 +14,10 @@
   /* colors */
   --link-color: #035fe6;
   --link-hover-color: #136ff6;
-  --background-color: rgb(0, 0, 0);
+  --background-color: #000;
   --light-color: #bdbdbd;
   --dark-color: #ccc;
-  --text-color: rgb(255, 255, 255);
+  --text-color: #fff;
 
   /* fonts */
   --body-font-family: quest;
@@ -190,17 +190,19 @@ main .section {
 }
 
 .section:nth-of-type(5) {
-  background-image: url(../img/black-people-using-futuristic-augmented-reality-de-upscaled.jpg);
+  background-image: url('../img/black-people-using-futuristic-augmented-reality-de-upscaled.jpg');
   height: 42rem;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
 }
+
 .footer picture img {
   width: 226px;
   height: 54px;
   vertical-align: middle;
 }
+
 @media (width >= 600px) {
   main .section {
     padding: 64px 32px;
