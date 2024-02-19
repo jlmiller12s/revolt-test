@@ -94,6 +94,73 @@ h4 { font-size: var(--heading-font-size-m) }
 h5 { font-size: var(--heading-font-size-s) }
 h6 { font-size: var(--heading-font-size-xs) }
 
+h1, h3 {
+  text-shadow: -2px 2px #474646;
+}
+
+/* begin glow effect */
+h2 {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 3rem;
+  line-height: 1;
+  letter-spacing: -2px;
+  color: rgba(255, 255, 255, 0.96);
+  animation: neon 1.5s ease-in-out infinite alternate;
+}
+
+h2:hover {
+  animation: neon-flicker 1s ease-in infinite alternate; 
+  cursor: pointer;
+}
+/*glow*/
+
+/* Begin Ticker */
+
+h4 {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 60px; /* Font size */
+  animation: tickerMove 8s linear infinite;
+}
+
+@keyframes tickerMove {
+  0% {
+      transform: translateX(0%);
+  }
+  100% {
+      transform: translateX(-50.5%);
+  }
+}
+
+@keyframes neon {
+  from {
+    text-shadow: 0 0 7px #feee3e, 0 0 20px #fff;
+  }
+  to {
+    text-shadow: 0 0 5px #feee3e, 0 0 10px #fff;
+  }
+}
+
+@keyframes neon-flicker {
+  from {
+    text-shadow: 0 0 7px hwb(51 27% 6%), 0 0 20px hwb(51 27% 6%);
+  }
+  
+  90% {
+    text-shadow: 0 0 7px #feee3e, 0 0 20px #feee3e;
+  }
+  95% {
+    text-shadow: 0 0 7px #ccc, 0 0 20px #ccc;
+  }
+  98% {
+    text-shadow: 0 0 7px #feee3e, 0 0 20px #feee3e;
+  }
+  to {
+    text-shadow: 0 0 7px #000, 0 0 20px #000;
+  }
+}
+
 p, dl, ol, ul, pre, blockquote {
   margin-top: 1em;
   margin-bottom: 1em;
