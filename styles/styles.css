@@ -197,9 +197,15 @@ main .section {
   background-position: bottom;
 }
 
-.footer picture img {
+.footer img:first-of-type {
   width: 226px;
   height: 54px;
+  vertical-align: middle;
+} 
+
+.footer img {
+  width: 2rem;
+  height: auto;
   vertical-align: middle;
 }
 
