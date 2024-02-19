@@ -111,7 +111,8 @@ h2:hover {
   animation: neon-flicker 1s ease-in infinite alternate; 
   cursor: pointer;
 }
-/*glow*/
+
+/* glow */
 
 
 /* Begin Ticker */ 
@@ -143,7 +144,7 @@ h4 {
 }
 
 @keyframes neon-flicker {
-  from 0% {
+  0% {
     text-shadow: 0 0 7px hwb(51deg 27% 6%), 0 0 20px hwb(51deg 27% 6%);
   }
   
@@ -159,7 +160,7 @@ h4 {
     text-shadow: 0 0 7px #feee3e, 0 0 20px #feee3e;
   }
 
-  to 100% {
+  100% {
     text-shadow: 0 0 7px #000, 0 0 20px #000;
   }
 }
