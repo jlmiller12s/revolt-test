@@ -88,9 +88,7 @@ h4, h5, h6 {
 }
 
 h1 { font-size: var(--heading-font-size-xxl) }
-h2 { font-size: var(--heading-font-size-xl) }
 h3 { font-size: var(--heading-font-size-l) }
-h4 { font-size: var(--heading-font-size-m) }
 h5 { font-size: var(--heading-font-size-s) }
 h6 { font-size: var(--heading-font-size-xs) }
 
@@ -105,7 +103,7 @@ h2 {
   font-size: 3rem;
   line-height: 1;
   letter-spacing: -2px;
-  color: rgba(255, 255, 255, 0.96);
+  color: #fff;
   animation: neon 1.5s ease-in-out infinite alternate;
 }
 
@@ -115,19 +113,20 @@ h2:hover {
 }
 /*glow*/
 
-/* Begin Ticker */
 
+/* Begin Ticker */ 
 h4 {
   display: inline-block;
   white-space: nowrap;
-  font-size: 60px; /* Font size */
-  animation: tickerMove 8s linear infinite;
+  font-size: 60px; /* Font size */ 
+  animation: tickermove 8s linear infinite;
 }
 
-@keyframes tickerMove {
+@keyframes tickermove {
   0% {
       transform: translateX(0%);
   }
+
   100% {
       transform: translateX(-50.5%);
   }
@@ -137,26 +136,30 @@ h4 {
   from {
     text-shadow: 0 0 7px #feee3e, 0 0 20px #fff;
   }
+
   to {
     text-shadow: 0 0 5px #feee3e, 0 0 10px #fff;
   }
 }
 
 @keyframes neon-flicker {
-  from {
-    text-shadow: 0 0 7px hwb(51 27% 6%), 0 0 20px hwb(51 27% 6%);
+  from 0% {
+    text-shadow: 0 0 7px hwb(51deg 27% 6%), 0 0 20px hwb(51deg 27% 6%);
   }
   
   90% {
     text-shadow: 0 0 7px #feee3e, 0 0 20px #feee3e;
   }
+
   95% {
     text-shadow: 0 0 7px #ccc, 0 0 20px #ccc;
   }
+
   98% {
     text-shadow: 0 0 7px #feee3e, 0 0 20px #feee3e;
   }
-  to {
+
+  to 100% {
     text-shadow: 0 0 7px #000, 0 0 20px #000;
   }
 }
@@ -264,16 +267,6 @@ main .section {
   background-position: bottom;
 }
 
-.footer ul img:first-of-type {
-  width: 2rem;
-  height: auto;
-  vertical-align: middle;
-} 
-
-.footer ul:nth-of-type(4) {
-  height: 4rem;
-  padding: 0;
-}
 
 @media (width >= 600px) {
   main .section {

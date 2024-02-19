@@ -28,3 +28,16 @@ footer .footer p {
 li a {
   color: #fff;
 }
+
+.footer-links div {
+  display: flex;
+}
+
+.footer li {
+  display: flex;
+}
+
+.footer picture:nth-of-type(1) img {
+  width: 15rem;
+  height: auto;
+}
