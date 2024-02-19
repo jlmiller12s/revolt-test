@@ -189,6 +189,18 @@ main .section {
   padding: 64px 16px;
 }
 
+.section:nth-of-type(5) {
+  background-image: url(../img/black-people-using-futuristic-augmented-reality-de-upscaled.jpg);
+  height: 42rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.footer picture img {
+  width: 226px;
+  height: 54px;
+  vertical-align: middle;
+}
 @media (width >= 600px) {
   main .section {
     padding: 64px 32px;

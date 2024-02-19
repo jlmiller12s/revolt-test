@@ -9,12 +9,7 @@ footer {
 .footer .default-content-wrapper {
   display: flex;
 }
-ul:before{
-  content:attr(aria-label);
-  font-size:120%;
-  font-weight:bold;
-  margin-left:-15px;
-}
+
 
 footer .footer {
   max-width: 1200px;
@@ -24,11 +19,12 @@ footer .footer {
 footer .footer p {
   margin: 0;
 }
-ul {
+.footer ul {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 1rem;
 }
+
 li a {
   color: #fff;
 }
