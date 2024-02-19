@@ -16,8 +16,8 @@ export default async function decorate(block) {
   // decorate footer DOM
   const footer = document.createElement('div');
   while (fragment.firstElementChild) footer.append(fragment.firstElementChild);
-   // setup image columns
-   [...block.children].forEach((row) => {
+  // setup image columns
+  [...block.children].forEach((row) => {
     [...row.children].forEach((col) => {
       const pic = col.querySelector('picture');
       if (pic) {
