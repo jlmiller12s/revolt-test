@@ -325,3 +325,17 @@ footer :nth-of-type(3) div {
   margin: 0 auto -2rem;
   font-size: .8rem;
 }
+
+@media screen and (max-width: 1050px) {
+  footer :nth-of-type(2) div {
+    position: relative;
+    left: 5vw;
+    top: -2rem;
+    flex-flow: wrap;
+}
+
+  .footer-links div {
+    display: flex;
+    flex-flow: wrap;
+}
+}
