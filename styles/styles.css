@@ -92,7 +92,7 @@ h3 { font-size: var(--heading-font-size-l) }
 h5 { font-size: var(--heading-font-size-s) }
 h6 { font-size: var(--heading-font-size-xs) }
 
-h1, h3 {
+h3 {
   text-shadow: -2px 2px #474646;
 }
 
