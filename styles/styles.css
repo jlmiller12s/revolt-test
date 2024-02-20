@@ -326,16 +326,16 @@ footer :nth-of-type(3) div {
   font-size: .8rem;
 }
 
-@media screen and (max-width: 1050px) {
+@media (width< 1050px) {
+  .footer-links div {
+    display: flex;
+    flex-flow: wrap;
+}
+
   footer :nth-of-type(2) div {
     position: relative;
     left: 5vw;
     top: -2rem;
-    flex-flow: wrap;
-}
-
-  .footer-links div {
-    display: flex;
     flex-flow: wrap;
 }
 }
