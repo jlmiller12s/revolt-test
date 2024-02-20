@@ -88,10 +88,13 @@ h4, h5, h6 {
 }
 
 h1 { font-size: var(--heading-font-size-xxl) }
-h3 { font-size: var(--heading-font-size-l); text-shadow: -2px 2px #474646; }
 h5 { font-size: var(--heading-font-size-s) }
 h6 { font-size: var(--heading-font-size-xs) }
 
+h3 { 
+  font-size: var(--heading-font-size-l);
+  text-shadow: -2px 2px #474646; 
+}
 
 /* begin glow effect */
 h2 {
