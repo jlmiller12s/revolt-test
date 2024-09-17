@@ -14,15 +14,15 @@
   /* colors */
   --link-color: #035fe6;
   --link-hover-color: #136ff6;
-  --background-color: #000;
+  --background-color: #fff;
   --light-color: #bdbdbd;
   --dark-color: #ccc;
-  --text-color: #fff;
+  --text-color: #18323d;
 
   /* fonts */
   --body-font-family: quest;
-  --heading-font-family: noto;
-  --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
+  --heading-font-family: Cabin,Arial,Helvetica,sans-serif;
+  --fixed-font-family: Cabin,Arial,Helvetica,sans-serif;
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -42,7 +42,7 @@
 }
 
 @font-face {
-  font-family: roboto-fallback;
+  font-family: Cabin,Arial,Helvetica,sans-serif;
   size-adjust: 100.06%;
   ascent-override: 95%;
   src: local('Arial');
@@ -103,14 +103,10 @@ h2 {
   font-size: 3rem;
   line-height: 1;
   letter-spacing: -2px;
-  color: #fff;
-  animation: neon 1.5s ease-in-out infinite alternate;
+  color: #18323d;
 }
 
-h2:hover {
-  animation: neon-flicker 1s ease-in infinite alternate; 
-  cursor: pointer;
-}
+
 
 /* glow */
 
